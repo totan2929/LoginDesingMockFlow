@@ -208,6 +208,15 @@ h5 {
 .btn-recuperar {
   top: 270px;
   left: 33px;
+  display: inline-block;
+  background-color: #30b8fc00;
+  color: #160ef4;
+  padding: 5px 10px;
+  width: 80%;
+  border-radius: 10px;
+  position: relative;
+  text-decoration: underline;
+  text-align: center;
 }
 
 .registrarse {
