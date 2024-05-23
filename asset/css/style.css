@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #0b5564;
+}
+
+.main-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.bg-img {
+  flex-grow: 1.1;
+  background-color: #0b5564;
+  animation: bgContainer 60s infinite;
+  background-image: url("../img/gafas1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+  transition: 4s ease-in;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0b5564;
+  background: -webkit-linear-gradient(0deg, #1ab5d4,#1590a9,#0b5564);
+  background: linear-gradient(0deg, #1ab5d4,#1590a9,#0b5564);  
+  flex: 0.9;
+}
+
+@keyframes bgContainer {
+  0% {
+    background-image: url("../img/gafas4.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+  }
+  20% {
+    background-image: url("../img/gafas2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+  }
+  40% {
+    background-image: url("../img/gafas7.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+  }
+  80% {
+    background-image: url("../img/gafas6.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+  }
+  100% {
+    background-image: url("../img/gafas5.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+  }
+}
+
+.box-login {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  width: 300px;
+  height: 620px;
+  position: relative;
+  border-radius: 25px;
+  margin-top: 50px;
+  box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+}
+
+.content-login {
+  width: 5.5rem;
+  height: 5.5rem;
+  border: 50%;
+  position: absolute;
+  top: 0.1%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #30b8fc;
+  text-align: center;
+  position: relative;
+  top: 70px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #30b8fc;
+  text-align: center;
+  position: relative;
+  top: 100px;
+}
+
+h4 {
+  font-size: 0.7rem;
+  color: #969797;
+  text-align: start;
+  position: relative;
+  top: 310px;
+  left: 30px;
+}
+
+h5 {
+  color: #969797;
+  cursor: none;
+  top: 320px;
+  vertical-align: middle;
+}
+
+.user-icon {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top: 160px;
+  left: 30px;
+}
+
+.control-user {
+  display: inline-block;
+  text-align: start;
+  border: none;
+  border-bottom: 2px solid #30b8fc;
+  outline-color: #f9f9f9;
+  width: 70%;
+  padding: 10px 14px 2px 14px;
+  background-color: #f9f9f9;
+  font-size: 0.9em;
+  position: relative;
+  top: 155px;
+  left: 33px;
+}
+
+.password-icon {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top: 200px;
+  left: 30px;
+}
+
+.control-password {
+  display: inline-block;
+  text-align: start;
+  border: none;
+  border-bottom: 2px solid #30b8fc;
+  outline-color: #f9f9f9;
+  width: 70%;
+  padding: 10px 14px 2px 14px;
+  background-color: #f9f9f9;
+  font-size: 0.9em;
+  position: relative;
+  top: 195px;
+  left: 33px;
+}
+
+.control-user::placeholder,
+.control-password::placeholder {
+  color: rgb(67, 199, 199);
+}
+
+.btn {
+  display: inline-block;
+  background-color: #30b8fc;
+  color: #f9f9f9;
+  padding: 5px 10px;
+  width: 80%;
+  border-radius: 10px;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-ingresar {
+  top: 250px;
+  left: 33px;
+}
+
+.btn-recuperar {
+  top: 270px;
+  left: 33px;
+}
+
+.registrarse {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px;
+  position: relative;
+  top: 322px;
+}
+
+@media (max-width: 768px){
+  .bg-img{
+    display: none;
+  }
+  .container{
+    width: 100vw;
+    flex:1;
+  }
+}
